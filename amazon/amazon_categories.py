@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
 urls = ["http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc"]
 
 
@@ -19,6 +18,29 @@ class Category:
 			res += i + " "
 		return res
 
+class Node:
+	def __init__(self, name):
+		self.name = name
+
+	def __str__(self):
+		return self.name
+
+	def __eq__(self, other):
+		return (isinstance(other, self.__class__) and self.name == other.name)
+
+nodes = []
+
+n = Node("name")
+m = Node("aaaname")
+r = Node("namsdfe")
+nodes.append(n)
+nodes.append(m)
+nodes.append(r)
+print(nodes)
+print(nodes.index('aaaname'))
+exit()
+
+
 while len(urls) != 0:
 	url = urls[0]
 	urls.pop(0)
@@ -34,6 +56,10 @@ while len(urls) != 0:
 	category = Category()
 	for i in cates:
 		category.addWords(i.text.strip())
+		n = Node(i.text.strip())
+		if not n in nodes:
+			nodes.append(n)
+		idx = index()
 		# print(i.text.strip())
 
 	print(category)

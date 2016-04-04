@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-urls = ["http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc"]
+urls = [("Ordinateurs portables","http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc")]
 
 
 class Category:
@@ -30,21 +30,23 @@ class Node:
 
 nodes = []
 
-n = Node("name")
-m = Node("aaaname")
-r = Node("namsdfe")
-nodes.append(n)
-nodes.append(m)
-nodes.append(r)
-print(nodes)
-print(nodes.index('aaaname'))
-exit()
+edges = []
+# n = Node("name")
+# m = Node("aaaname")
+# r = Node("namsdfe")
+# nodes.append(n)
+# nodes.append(m)
+# nodes.append(r)
+# print(nodes)
+# print(nodes.index('aaaname'))
+# exit()
 
-
+counter = 0
 while len(urls) != 0:
-	url = urls[0]
+	prev_cate = urls[0][0]
+	url = urls[0][1]
 	urls.pop(0)
-	print(url)
+	# print(url)
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content)
 	# print(soup.prettify())
@@ -53,25 +55,36 @@ while len(urls) != 0:
 	div = soup.find_all("li", {"class":"a-carousel-card"})
 	cate = soup.find("ul", {"class":"a-horizontal a-size-small"})
 	cates = cate.find_all("a")
-	category = Category()
-	for i in cates:
-		category.addWords(i.text.strip())
-		n = Node(i.text.strip())
-		if not n in nodes:
-			nodes.append(n)
-		idx = index()
-		# print(i.text.strip())
+	
+	# category = Category()
 
-	print(category)
+	category = cates[-1].text.strip()
+	n = Node(category)
+	if not n in nodes:
+		nodes.append(n)
+	
+	edges.append((prev_cate, category))
+
+	# for i in cates:
+	# 	category = i.text.strip()
+	# 	# category.addWords(i.text.strip())
+	# 	n = Node(category)
+	# 	print(n)
+	# 	if not n in nodes:
+	# 		nodes.append(n)
+
 	for i in div:
 		# print(i)
 		link = i.find("a")
 		txt_link = link.get("href")
 		# print(link.get('href'))
-		urls.append("http://www.amazon.fr" + txt_link)
+		urls.append((category, "http://www.amazon.fr" + txt_link))
+	if counter == 100:
+		break
+	counter += 1
 	
-exit();
-
+print(nodes)
+print(edges)
 
 print(tab)
 

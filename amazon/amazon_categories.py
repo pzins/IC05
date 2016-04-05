@@ -46,7 +46,7 @@ while len(urls) != 0:
 	prev_cate = urls[0][0]
 	url = urls[0][1]
 	urls.pop(0)
-	# print(url)
+	print(url)
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content)
 	# print(soup.prettify())
@@ -79,15 +79,18 @@ while len(urls) != 0:
 		txt_link = link.get("href")
 		# print(link.get('href'))
 		urls.append((category, "http://www.amazon.fr" + txt_link))
-	if counter == 100:
+	if counter == 30:
 		break
 	counter += 1
-	
+
+print("------------")
 print(nodes)
 print(edges)
-
-print(tab)
-
+f = open('res.txt','w')
+for i in edges:
+	s = i[0] + " ; " + i[1] + "\n"
+	f.write(s) # python will convert \n to os.linesep
+f.close()
 
 
 

@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+import time
+from random import randint
 
 
 urls = [("Ordinateurs portables","http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc")]
@@ -43,6 +45,10 @@ edges = []
 
 counter = 0
 while len(urls) != 0:
+	random = randint(0, 100)
+	random = random / 100
+	time.sleep(2*random)
+
 	prev_cate = urls[0][0]
 	url = urls[0][1]
 	urls.pop(0)
@@ -79,7 +85,7 @@ while len(urls) != 0:
 		txt_link = link.get("href")
 		# print(link.get('href'))
 		urls.append((category, "http://www.amazon.fr" + txt_link))
-	if counter == 30:
+	if counter == 200:
 		break
 	counter += 1
 

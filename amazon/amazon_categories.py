@@ -47,8 +47,8 @@ counter = 0
 while len(urls) != 0:
 	random = randint(0, 100)
 	random = random / 100
-	time.sleep(2*random)
-
+	# time.sleep(2*random)
+	print(counter)
 	prev_cate = urls[0][0]
 	url = urls[0][1]
 	urls.pop(0)
@@ -58,36 +58,39 @@ while len(urls) != 0:
 	# print(soup.prettify())
 	# div = soup.find_all("div", {"aria-hidden":"true"})
 	# div = soup.find_all("div", {"class":"p13n-sc-truncated"})
-	div = soup.find_all("li", {"class":"a-carousel-card"})
-	cate = soup.find("ul", {"class":"a-horizontal a-size-small"})
-	cates = cate.find_all("a")
+	try:
+		div = soup.find_all("li", {"class":"a-carousel-card"})
+		cate = soup.find("ul", {"class":"a-horizontal a-size-small"})
+		cates = cate.find_all("a")
 	
-	# category = Category()
+		# category = Category()
 
-	category = cates[-1].text.strip()
-	n = Node(category)
-	if not n in nodes:
-		nodes.append(n)
-	
-	edges.append((prev_cate, category))
+		category = cates[-1].text.strip()
+		n = Node(category)
+		if not n in nodes:
+			nodes.append(n)
+		
+		edges.append((prev_cate, category))
 
-	# for i in cates:
-	# 	category = i.text.strip()
-	# 	# category.addWords(i.text.strip())
-	# 	n = Node(category)
-	# 	print(n)
-	# 	if not n in nodes:
-	# 		nodes.append(n)
+		# for i in cates:
+		# 	category = i.text.strip()
+		# 	# category.addWords(i.text.strip())
+		# 	n = Node(category)
+		# 	print(n)
+		# 	if not n in nodes:
+		# 		nodes.append(n)
 
-	for i in div:
-		# print(i)
-		link = i.find("a")
-		txt_link = link.get("href")
-		# print(link.get('href'))
-		urls.append((category, "http://www.amazon.fr" + txt_link))
-	if counter == 200:
-		break
-	counter += 1
+		for i in div:
+			# print(i)
+			link = i.find("a")
+			txt_link = link.get("href")
+			# print(link.get('href'))
+			urls.append((category, "http://www.amazon.fr" + txt_link))
+		if counter == 100:
+			break
+		counter += 1
+	except:
+		print('No link in this page')
 
 print("------------")
 print(nodes)

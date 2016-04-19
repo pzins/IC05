@@ -43,16 +43,25 @@ edges = []
 # print(nodes.index('aaaname'))
 # exit()
 
+old_urls = []
+
+
 counter = 0
 while len(urls) != 0:
+	counter += 1
 	random = randint(0, 100)
 	random = random / 100
 	# time.sleep(2*random)
 	print(counter)
 	prev_cate = urls[0][0]
+
 	url = urls[0][1]
 	urls.pop(0)
-	print(url)
+	if url in old_urls:
+		continue
+	old_urls.append(url)
+
+
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content)
 	# print(soup.prettify())
@@ -64,31 +73,28 @@ while len(urls) != 0:
 		cates = cate.find_all("a")
 	
 		# category = Category()
-
 		category = cates[-1].text.strip()
+
+		if category == prev_cate and counter > 1:
+			continue
+
+
+		# save node (categorie)
 		n = Node(category)
 		if not n in nodes:
 			nodes.append(n)
 		
 		edges.append((prev_cate, category))
 
-		# for i in cates:
-		# 	category = i.text.strip()
-		# 	# category.addWords(i.text.strip())
-		# 	n = Node(category)
-		# 	print(n)
-		# 	if not n in nodes:
-		# 		nodes.append(n)
-
+		#ajout des autres liens dans la file
 		for i in div:
-			# print(i)
 			link = i.find("a")
 			txt_link = link.get("href")
-			# print(link.get('href'))
 			urls.append((category, "http://www.amazon.fr" + txt_link))
-		if counter == 100:
+
+		# fin
+		if counter > 200:
 			break
-		counter += 1
 	except:
 		print('No link in this page')
 

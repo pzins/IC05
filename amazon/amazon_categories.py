@@ -45,14 +45,18 @@ edges = []
 
 old_urls = []
 
+f = open('res.txt','w')
+
 
 counter = 0
 while len(urls) != 0:
 	counter += 1
-	random = randint(0, 100)
-	random = random / 100
-	# time.sleep(2*random)
-	print(counter)
+	if counter % 100 == 0:
+		random = randint(0, 100)
+		time.sleep(random)
+
+
+	# print(counter)
 	prev_cate = urls[0][0]
 
 	url = urls[0][1]
@@ -63,7 +67,7 @@ while len(urls) != 0:
 
 
 	r = requests.get(url)
-	soup = BeautifulSoup(r.content)
+	soup = BeautifulSoup(r.content, "html.parser")
 	# print(soup.prettify())
 	# div = soup.find_all("div", {"aria-hidden":"true"})
 	# div = soup.find_all("div", {"class":"p13n-sc-truncated"})
@@ -85,7 +89,8 @@ while len(urls) != 0:
 			nodes.append(n)
 		
 		edges.append((prev_cate, category))
-
+		s = prev_cate + ";" + category + "\n"
+		f.write(s) # python will convert \n to os.linesep
 		#ajout des autres liens dans la file
 		for i in div:
 			link = i.find("a")
@@ -93,19 +98,17 @@ while len(urls) != 0:
 			urls.append((category, "http://www.amazon.fr" + txt_link))
 
 		# fin
-		if counter > 200:
-			break
+		# if counter > 200:
+		# 	break
 	except:
 		print('No link in this page')
-
-print("------------")
-print(nodes)
-print(edges)
-f = open('res.txt','w')
-for i in edges:
-	s = i[0] + " ; " + i[1] + "\n"
-	f.write(s) # python will convert \n to os.linesep
 f.close()
+
+# f = open('res.txt','w')
+# for i in edges:
+# 	s = i[0] + " ; " + i[1] + "\n"
+# 	f.write(s)
+# f.close()
 
 
 

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?><gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+  <meta lastmodifieddate="2009-03-20">
+    <creator>Gexf.net</creator>
+    <description>description</description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="edge" mode="static"/>
+    <attributes class="node" mode="static"/>
+  </graph>
+  <nodes>
+    <node id="0" label="Ballons"/>
+    <node id="1" label="Ballons entra&#238;nement"/>
+    <node id="2" label="Collections de Stickers"/>
+    <node id="3" label="Peluches"/>
+    <node id="4" label="Pompes de gonflage et accessoires"/>
+    <node id="5" label="Fiction"/>
+    <node id="6" label="Jeux de cartes"/>
+    <node id="7" label="Tasses &#224; caf&#233;"/>
+    <node id="8" label="Adultes"/>
+    <node id="9" label="Paniers"/>
+    <node id="10" label="Pompes &#224; main"/>
+    <node id="11" label="Jeux de balles et de ballons"/>
+    <node id="12" label="Ballons match"/>
+    <node id="13" label="Ballons loisir"/>
+    <node id="14" label="Piles jetables"/>
+    <node id="15" label="Kits de loisirs cr&#233;atifs"/>
+    <node id="16" label="Vaisselles"/>
+    <node id="17" label="Equipements de la maison"/>
+    <node id="18" label="Troph&#233;es"/>
+    <node id="19" label="Jeux"/>
+    <node id="20" label="Porte-clefs"/>
+    <node id="21" label="Objets de collection et souvenirs"/>
+    <node id="22" label="Mat&#233;riels et Accessoires"/>
+    <node id="23" label="Porte-brosses &#224; dents"/>
+    <node id="24" label="Pinces &#224; cheveux"/>
+    <node id="25" label="Sweats &#224; capuche"/>
+    <node id="26" label="Enceintes portables"/>
+    <node id="27" label="Ballons de gymnastique"/>
+    <node id="28" label="&#201;quipement de massage professionnel"/>
+    <node id="29" label="Kits de r&#233;paration"/>
+    <node id="30" label="Gonfleurs et pompes manuelles"/>
+    <node id="31" label="Bubble-gum"/>
+    <node id="32" label="Mouchoirs"/>
+    <node id="33" label="Sets de badminton"/>
+    <node id="34" label="Vaisselle"/>
+    <node id="35" label="Eau de toilette"/>
+    <node id="36" label="Bracelets"/>
+    <node id="37" label="Maquillage"/>
+    <node id="38" label="Loisirs cr&#233;atifs"/>
+    <node id="39" label="Homme"/>
+    <node id="40" label="T-Shirts et d&#233;bardeurs"/>
+  </nodes>
+  <edges>
+    <edge id="0" source="0" target="1"/>
+    <edge id="1" source="1" target="2"/>
+    <edge id="2" source="1" target="3"/>
+    <edge id="3" source="1" target="0"/>
+    <edge id="4" source="1" target="4"/>
+    <edge id="5" source="1" target="5"/>
+    <edge id="6" source="2" target="6"/>
+    <edge id="7" source="2" target="6"/>
+    <edge id="8" source="2" target="6"/>
+    <edge id="9" source="2" target="1"/>
+    <edge id="10" source="3" target="6"/>
+    <edge id="11" source="3" target="7"/>
+    <edge id="12" source="3" target="7"/>
+    <edge id="13" source="0" target="8"/>
+    <edge id="14" source="0" target="9"/>
+    <edge id="15" source="0" target="10"/>
+    <edge id="16" source="0" target="11"/>
+    <edge id="17" source="4" target="9"/>
+    <edge id="18" source="4" target="0"/>
+    <edge id="19" source="4" target="12"/>
+    <edge id="20" source="4" target="13"/>
+    <edge id="21" source="6" target="14"/>
+    <edge id="22" source="6" target="15"/>
+    <edge id="23" source="7" target="16"/>
+    <edge id="24" source="7" target="17"/>
+    <edge id="25" source="7" target="18"/>
+    <edge id="26" source="7" target="18"/>
+    <edge id="27" source="7" target="19"/>
+    <edge id="28" source="7" target="20"/>
+    <edge id="29" source="7" target="20"/>
+    <edge id="30" source="7" target="21"/>
+    <edge id="31" source="8" target="22"/>
+    <edge id="32" source="8" target="23"/>
+    <edge id="33" source="8" target="24"/>
+    <edge id="34" source="9" target="25"/>
+    <edge id="35" source="9" target="26"/>
+    <edge id="36" source="10" target="27"/>
+    <edge id="37" source="10" target="28"/>
+    <edge id="38" source="10" target="29"/>
+    <edge id="39" source="11" target="0"/>
+    <edge id="40" source="11" target="0"/>
+    <edge id="41" source="9" target="11"/>
+    <edge id="42" source="0" target="1"/>
+    <edge id="43" source="0" target="30"/>
+    <edge id="44" source="0" target="31"/>
+    <edge id="45" source="12" target="1"/>
+    <edge id="46" source="12" target="32"/>
+    <edge id="47" source="12" target="33"/>
+    <edge id="48" source="12" target="34"/>
+    <edge id="49" source="13" target="0"/>
+    <edge id="50" source="15" target="35"/>
+    <edge id="51" source="15" target="36"/>
+    <edge id="52" source="15" target="37"/>
+    <edge id="53" source="15" target="38"/>
+    <edge id="54" source="16" target="20"/>
+    <edge id="55" source="17" target="39"/>
+    <edge id="56" source="17" target="39"/>
+    <edge id="57" source="17" target="40"/>
+  </edges>
+</gexf>

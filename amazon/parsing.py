@@ -1,7 +1,7 @@
 from lxml import etree
 
-input_file = "resultat_1h30"
-output_file = "amazon_gephi2.gexf"
+input_file = "res.txt"
+output_file = "amazon_gephi3.gexf"
 
 
 # categories == nodes
@@ -10,10 +10,15 @@ categories = []
 links = []
 
 
+
 #fichier avec les données
 f = open(input_file)
 #récupération des catégories == nodes
 for i in f:
+	
+	#ajout pour supprimer les 2 reference
+	i = i[i.find(';',1+i.find(';'))+1:len(i)]
+
 	tab = i.partition(";")
 	if not tab[0] in categories:
 		categories.append(tab[0])
@@ -25,6 +30,10 @@ f.close();
 f = open(input_file)
 #récupération des edges
 for i in f:
+	
+	#ajout pour supprimer les 2 reference
+	i = i[i.find(';',1+i.find(';'))+1:len(i)]
+
 	tab = i.partition(";")
 	if (tab[0] in categories) and (tab[2].rstrip() in categories):
 		src = categories.index(tab[0])

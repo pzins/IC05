@@ -5,7 +5,8 @@ from random import randint
 
 # file
 # urls = [("Ballons", "B0116Q6U5U","https://www.amazon.fr/adidas-Replique-Ballon-Bright-Indigo/dp/B0116Q6U5U/ref=lp_339893031_1_1?s=sports&ie=UTF8&qid=1462282939&sr=1-1")]
-urls = [("Ordinateurs portables", "B0105LFO3G","http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc")]
+# urls = [("Ordinateurs portables", "B0105LFO3G","http://www.amazon.fr/Asus-Chromebook-C200MA-KX017-Portable-Celeron/dp/B0105LFO3G/ref=sr_1_4?s=computers&ie=UTF8&qid=1459258627&sr=1-4&keywords=pc")]
+urls = [("Smartphones et téléphones portables débloqués", "B0168FGZR2","https://www.amazon.fr/Doogee-X5-Smartphone-D%C3%A9bloqu%C3%A9-Op%C3%A9rateur/dp/B0168FGZR2/ref=sr_1_1?s=electronics&ie=UTF8&qid=1462383104&sr=1-1&keywords=smartphone")]
 
 
 nodes = []

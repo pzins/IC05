@@ -1,7 +1,7 @@
 from lxml import etree
 
 input_file = "res.txt"
-output_file = "amazon_gephi6.gexf"
+output_file = "amazon_gephi7.gexf"
 
 
 # categories == nodes

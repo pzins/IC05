@@ -15,17 +15,17 @@ urls = [("Ordinateurs portables", "B0105LFO3G","http://www.amazon.fr/Asus-Chrome
 
 
 
-# #load file à partir du fichier de sauvegarde
-# savedFile = open("saveFile", 'r')
-# urls = []
-# for i in savedFile:
-# 	elements = i.split("*")
-# 	urls.append((elements[0], elements[1], elements[2].strip()))
+#load file à partir du fichier de sauvegarde
+savedFile = open("saveFile", 'r')
+urls = []
+for i in savedFile:
+	elements = i.split("*")
+	urls.append((elements[0], elements[1], elements[2].strip()))
 
-# #load old_urls already visited
-# savedFile = open("saveOldUrls", 'r')
-# for i in savedFile:
-# 	old_urls.append(i.strip())
+#load old_urls already visited
+savedFile = open("saveOldUrls", 'r')
+for i in savedFile:
+	old_urls.append(i.strip())
 
 
 try:

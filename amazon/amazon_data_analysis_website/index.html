@@ -2,20 +2,20 @@
 <html lang="fr">
 
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Amazon Data Analysis">
-        <meta name="author" content="ARTCHOUNIN Daniel">
-        <meta name="author" content="SADIKI Camil">
-        <meta name="author" content="ZINS Matthieu">
-        <title>Amazon Data Analysis</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Agency - Start Bootstrap Theme</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="css/agency.css" rel="stylesheet">
+        <link href="css/amazon.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +30,7 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
 
     <body id="page-top" class="index">
@@ -55,10 +56,13 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#graph">Graphe</a>
+                            <a class="page-scroll" href="#main_graph">Graphe principal</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#project_description">Description du projet</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Autres résultats</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#team">L'équipe</a>
@@ -76,18 +80,19 @@
                 <div class="intro-text">
                     <div class="intro-lead-in">Amazon</div>
                     <div class="intro-heading">Data Analysis</div>
-                    <a href="#graph" class="page-scroll btn btn-xl">Graphe</a>
+                    <a href="#main_graph" class="page-scroll btn btn-xl">Graphe principal</a>
                 </div>
             </div>
         </header>
 
-        <!-- Graph Section -->
-        <section id="graph">
+        <!-- Main graph Section -->
+        <section id="main_graph">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Graphe</h2>
+                        <h2 class="section-heading">Graphe principal</h2>
                     </div>
+                    <p>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="./amazon_sigma/network/index.html"></iframe>
@@ -95,15 +100,64 @@
             </div>            
         </section>
 
-        <!-- Project description Section -->
+        <!-- Project Description Section -->
         <section id="project_description">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Description du projet</h2>
                     </div>
+                    <div class="col-lg-12 text-justify">
+                        <p>
+                            Le but du projet était de parvenir à mettre en évidence le fait que des produits appartenant à certaines catégories ont tendance à être souvent achetés ensemble sur le site de vente en ligne Amazon. On considère que l'algorithme d'Amazon de recommandations d'achats de produits associés à un autre produit se base en grande partie sur les produits achetés ensemble par leurs clients. Par conséquent, en scrappant les liens entre différents produits issus des recommandations d'Amazon, le projet visait à mettre en surbrillance des produits achetés souvent ensemble.
+                        </p>
+                    </div>
                 </div>
             </div> 
+        </section>
+
+        <!-- Other Results Section -->
+        <section id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Autres résultats</h2>
+                        <h3 class="section-subheading text-muted">Graphes obtenus après application de filtres.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/result_1.png" class="img-thumbnail" height="289" width="400" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/result_2.png" class="img-thumbnail" height="289" width="400" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/treehouse.png" class="img-thumbnail" height="289" width="400" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Team Section -->
@@ -118,42 +172,33 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/artchounin_daniel.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/team/artchounin_daniel.JPG"  class="img-circle" height="200" width="180" alt="">
                             <h4>ARTCHOUNIN Daniel</h4>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/danielartchounin"><i class="fa fa-linkedin"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/sadiki_camil.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/team/sadiki_camil.jpg" class="img-circle" height="200" width="180" alt="">
                             <h4>SADIKI Camil</h4>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/camil-sadiki-3a3547b8"><i class="fa fa-linkedin"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/zins_pierre.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/team/zins_pierre.jpg" class="img-circle" height="200" width="180" alt="">
                             <h4>ZINS Pierre</h4>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/zinspierre"><i class="fa fa-linkedin"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -171,6 +216,73 @@
                 </div>
             </div>
         </footer>
+
+
+        <!-- Other Results Modals -->
+
+        <!-- Other Results Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_1/network/index.html"></iframe>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Results Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_2/network/index.html"></iframe>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Results Modal 3 --> <!-- To be updated -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_3/network/index.html"></iframe>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>

@@ -3,19 +3,19 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "",
+    "file": "https://fr.wikipedia.org/wiki/Amazon.com#/media/File:Amazon.com-Logo.svg",
     "link": "",
-    "text": "ic05"
+    "text": "ARTCHOUNIN Daniel - SADIKI Camil - ZINS Pierre"
   },
   "text": {
-    "more": "produits souvent achetés sur Amazon",
-    "intro": "Princpales catégories des produits achetés ensemble sur Amazon",
-    "title": "Principales catégories des achats"
+    "more": "Ce graphe représente les catégories principales des produits achetés ensemble sur Amazon.",
+    "intro": "Catégories principales des produits achetés ensemble sur Amazon",
+    "title": "Catégories principales des achats"
   },
   "legend": {
-    "edgeLabel": "achats",
-    "colorLabel": "#000000",
-    "nodeLabel": "catégories"
+    "edgeLabel": "Achats",
+    "colorLabel": "Classes de catégorie",
+    "nodeLabel": "Catégories"
   },
   "features": {
     "search": true,
@@ -24,7 +24,7 @@
   },
   "informationPanel": {
     "groupByEdgeDirection": true,
-    "imageAttribute": "Id"
+    "imageAttribute": "Modularity Class"
   },
   "sigma": {
     "drawingProperties": {

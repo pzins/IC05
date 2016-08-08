@@ -1,11 +1,12 @@
 # Projet IC05
 
+---
 ## amazon
 
 #### Description :
-This projet consists of two part:
-* First, the data has to be scraped from an online store in order to build links between items.
-* Secondly, the data has to be reprensented as a graph.
+This projet consists in two parts:
+* First, the data is scraped from an online store in order to build links between items.
+* Then, grap representation of the data.
 
 #### Members :
 * Daniel Artchounin
@@ -13,7 +14,7 @@ This projet consists of two part:
 * Pierre Zins
 
 #### Files :
-- scraper.py : scrap product from Amazon which are often bought together. Create a file amazon_data with all the data.
+- scraper.py : scrap products from Amazon which are often bought together. Create a file amazon_data with all the data.
 - transform.py : convert the result of the scraping into GEXF file usable with Gephi
 - append.py : add new data (file) in the main data file
 - amazon_data : data scraped
@@ -23,7 +24,6 @@ This projet consists of two part:
 	- gephi file 
 	- SigmaJS version
 
-- dust : autres essais
 
 ---
 
@@ -38,8 +38,8 @@ This projet consists of two part:
 
 
 An oriented edge from team A to team B
-- if the result attribute is > 0 : A have more victory against B
-- if the result attribute is < 0 : B have more victory against A
+- if the result attribute is > 0 : A has more victory against B
+- if the result attribute is < 0 : B has more victory against A
 - if the result attribute is = 0 : A and B have equal victories/defeats/draws
 
 

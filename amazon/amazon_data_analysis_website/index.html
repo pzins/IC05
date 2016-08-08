@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Amazon - Data Analysis</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                             <a class="page-scroll" href="#project_description">Description du projet</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#portfolio">Autres résultats</a>
+                            <a class="page-scroll" href="#portfolio">Résultats</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#team">L'équipe</a>
@@ -95,7 +95,7 @@
                     <p>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="./amazon_sigma/network/index.html"></iframe>
+                    <iframe class="embed-responsive-item" src="./amazon_sigma_main/network/index.html"></iframe>
                 </div>
             </div>            
         </section>
@@ -109,24 +109,24 @@
                     </div>
                     <div class="col-lg-12 text-justify">
                         <p>
-                            Le but du projet était de parvenir à mettre en évidence le fait que des produits appartenant à certaines catégories ont tendance à être souvent achetés ensemble sur le site de vente en ligne Amazon. On considère que l'algorithme d'Amazon de recommandations d'achats de produits associés à un autre produit se base en grande partie sur les produits achetés ensemble par leurs clients. Par conséquent, en scrappant les liens entre différents produits issus des recommandations d'Amazon, le projet visait à mettre en surbrillance des produits achetés souvent ensemble.
+                            Le but du projet était de parvenir à mettre en évidence le fait que des produits appartenant à certaines catégories ont tendance à être souvent achetés ensemble sur le site de vente en ligne <em>Amazon</em>. On considère que l'algorithme d'<em>Amazon</em> de recommandations d'achats de produits associés à un autre produit se base en grande partie sur les produits achetés ensemble par ses clients. Par conséquent, en scrappant les liens entre différents produits issus des recommandations d'<em>Amazon</em>, le projet visait à mettre en surbrillance des produits achetés souvent ensemble.
                         </p>
                     </div>
                 </div>
             </div> 
         </section>
 
-        <!-- Other Results Section -->
+        <!-- Results Section -->
         <section id="portfolio" class="bg-light-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Autres résultats</h2>
-                        <h3 class="section-subheading text-muted">Graphes obtenus après application de filtres.</h3>
+                        <h2 class="section-heading">Résultats</h2>
+                        <h3 class="section-subheading text-muted">Graphes obtenus sans/avec application de filtres</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-6 col-sm-6 portfolio-item">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -135,8 +135,12 @@
                             </div>
                             <img src="img/portfolio/result_1.png" class="img-thumbnail" height="289" width="400" alt="">
                         </a>
+                        <div class="portfolio-caption">
+                            <h4>Graphe 1</h4>
+                            <p class="text-muted">Généré après classification sans application de filtre a posteriori</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-6 col-sm-6 portfolio-item">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -145,16 +149,38 @@
                             </div>
                             <img src="img/portfolio/result_2.png" class="img-thumbnail" height="289" width="400" alt="">
                         </a>
+                        <div class="portfolio-caption">
+                            <h4>Graphe 2</h4>
+                            <p class="text-muted">Généré après classification sans application de filtre a posteriori</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-6 col-sm-6 portfolio-item">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <i class="fa fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="img/portfolio/treehouse.png" class="img-thumbnail" height="289" width="400" alt="">
+                            <img src="img/portfolio/result_3.png" class="img-thumbnail" height="289" width="400" alt="">
                         </a>
+                        <div class="portfolio-caption">
+                            <h4>Graphe 3</h4>
+                            <p class="text-muted">Généré après classification avec application d'un premier filtre a posteriori</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/result_4.png" class="img-thumbnail" height="289" width="400" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Graphe 4</h4>
+                            <p class="text-muted">Généré après classification avec application d'un deuxième filtre a posteriori</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,6 +200,7 @@
                         <div class="team-member">
                             <img src="img/team/artchounin_daniel.JPG"  class="img-circle" height="200" width="180" alt="">
                             <h4>ARTCHOUNIN Daniel</h4>
+                            <p class="text-muted">GI04 - FDD - UTC</p>
                             <ul class="list-inline social-buttons">
                                 <li>
                                     <a href="https://www.linkedin.com/in/danielartchounin"><i class="fa fa-linkedin"></i></a>
@@ -185,6 +212,7 @@
                         <div class="team-member">
                             <img src="img/team/sadiki_camil.jpg" class="img-circle" height="200" width="180" alt="">
                             <h4>SADIKI Camil</h4>
+                            <p class="text-muted">GI04 - SRI - UTC</p>
                             <ul class="list-inline social-buttons">
                                 <li>
                                     <a href="https://www.linkedin.com/in/camil-sadiki-3a3547b8"><i class="fa fa-linkedin"></i></a>
@@ -196,6 +224,7 @@
                         <div class="team-member">
                             <img src="img/team/zins_pierre.jpg" class="img-circle" height="200" width="180" alt="">
                             <h4>ZINS Pierre</h4>
+                            <p class="text-muted">GI04 - STRIE - UTC</p>
                             <ul class="list-inline social-buttons">
                                 <li>
                                     <a href="https://www.linkedin.com/in/zinspierre"><i class="fa fa-linkedin"></i></a>
@@ -218,9 +247,9 @@
         </footer>
 
 
-        <!-- Other Results Modals -->
+        <!-- Results Modals -->
 
-        <!-- Other Results Modal 1 -->
+        <!-- Results Modal 1 -->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -232,16 +261,41 @@
                 <div class="container">
                     <div class="row">
                         <div class="modal-body">
+                            <h2>Graphe 1</h2>
+                            <p class="item-intro text-muted">Généré après classification sans application de filtre a posteriori</p>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_1/network/index.html"></iframe>
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_cluster_1/network/index.html"></iframe>
                             </div>
-                        </div> 
+                            <p>A l'aide de <tt>Gephi</tt>, nous avons effectué une classification en nous basant sur le critère de modularité. Ensuite, avec l'algorithme "OpenOrd" (algorithme de dessin basé sur les forces), nous avons pu obtenir un nouvelle vue intéressante des données. Cette démarche nous permet de visualiser les catégories des objets les plus souvent achetés ensemble quand quelqu'un achète un produit informatique. </p>
+
+                            <p>Nous préciserons que nous avons généré deux graphes différents (graphes 1 et 2) pour mettre en surbrillance les noeuds centraux des différents clusters. Afin de parvenir à ces résultats, nous avons joué sur la spatialisation des noeuds et sur les paramètres des algorithmes. </p>
+
+                            <p>Dans les deux cas, nous discernons des noeuds centraux dans certains clusters : </p>
+
+                            <ul>
+                              <li> <tt>Housses et étuis téléphones portables</tt> </li>
+                              <li> <tt>Câbles USB</tt> </li>
+                              <li> <tt>Accessoires</tt> </li>
+                              <li> <tt>Casques et écouteurs</tt> </li>
+                            </ul>
+
+                            <p>Nous obtenons également les noeuds centraux suivants dans d'autres plus petits clusters : </p>
+
+                            <ul>
+                              <li> <tt>Piles jetables</tt> </li>
+                              <li> <tt>Caméras de surveillance</tt> </li>
+                              <li> <tt>Ampoules LED</tt> </li>
+                            </ul>
+
+                            <p>Ces représentations permettent de mettre en exergue un nombre réduit de classes qui représentent des groupes de catégories dont les produits sont souvent achetés ensemble. Ainsi, il est plus simple de comprendre les liens entre les produits achetés. Les deux graphes mettent donc bien en évidence des liens importants entre les clusters des noeuds  <tt>Housses et étuis téléphones portables</tt>, <tt>Câbles USB</tt> et <tt>Accessoires</tt>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer le graphe 1</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Other Results Modal 2 -->
+        <!-- Results Modal 2 -->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -253,16 +307,41 @@
                 <div class="container">
                     <div class="row">
                         <div class="modal-body">
+                            <h2>Graphe 2</h2>
+                            <p class="item-intro text-muted">Généré après classification sans application de filtre a posteriori</p>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_2/network/index.html"></iframe>
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_cluster_2/network/index.html"></iframe>
                             </div>
+                            <p>A l'aide de <tt>Gephi</tt>, nous avons effectué une classification en nous basant sur le critère de modularité. Ensuite, avec l'algorithme "OpenOrd" (algorithme de dessin basé sur les forces), nous avons pu obtenir un nouvelle vue intéressante des données. Cette démarche nous permet de visualiser les catégories des objets les plus souvent achetés ensemble quand quelqu'un achète un produit informatique. </p>
+
+                            <p>Nous préciserons que nous avons généré deux graphes différents (graphes 1 et 2) pour mettre en surbrillance les noeuds centraux des différents clusters. Afin de parvenir à ces résultats, nous avons joué sur la spatialisation des noeuds et sur les paramètres des algorithmes. </p>
+
+                            <p>Dans les deux cas, nous discernons des noeuds centraux dans certains clusters : </p>
+
+                            <ul>
+                              <li> <tt>Housses et étuis téléphones portables</tt> </li>
+                              <li> <tt>Câbles USB</tt> </li>
+                              <li> <tt>Accessoires</tt> </li>
+                              <li> <tt>Casques et écouteurs</tt> </li>
+                            </ul>
+
+                            <p>Nous obtenons également les noeuds centraux suivants dans d'autres plus petits clusters : </p>
+
+                            <ul>
+                              <li> <tt>Piles jetables</tt> </li>
+                              <li> <tt>Caméras de surveillance</tt> </li>
+                              <li> <tt>Ampoules LED</tt> </li>
+                            </ul>
+
+                            <p>Ces représentations permettent de mettre en exergue un nombre réduit de classes qui représentent des groupes de catégories dont les produits sont souvent achetés ensemble. Ainsi, il est plus simple de comprendre les liens entre les produits achetés. Les deux graphes mettent donc bien en évidence des liens importants entre les clusters des noeuds  <tt>Housses et étuis téléphones portables</tt>, <tt>Câbles USB</tt> et <tt>Accessoires</tt>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer le graphe 2</button>
                         </div> 
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Other Results Modal 3 --> <!-- To be updated -->
+        <!-- Results Modal 3 -->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -274,9 +353,108 @@
                 <div class="container">
                     <div class="row">
                         <div class="modal-body">
+                            <h2>Graphe 3</h2>
+                            <p class="item-intro text-muted">Généré après classification avec application d'un premier filtre a posteriori</p>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_3/network/index.html"></iframe>
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_1/network/index.html"></iframe>
                             </div>
+                            <p>En filtrant les résultats selon le degré des noeuds et le poids des arcs, nous obtenons le graphe 3.</p>
+
+                            <p>Par conséquent, dans le graphe 3, l'identification des classes et des catégories dans chacune d'entre-elles nous permet de mettre en exergue les catégories des produits souvent achetés ensemble dans le domaine de l'informatique et du numérique et donc d'émettre des interprétations associées à ces tendances.</p>
+
+                            <p>La classe bleu clair contient les catégories : <tt>Housses</tt>, <tt>Etuis</tt> et <tt>Batteries pour caméscopes</tt>. Ainsi, il semble que des clients achètent ensemble différents équipements associés à leur(s) caméscope(s).</p>
+
+                            <p>La classe bleu foncé contient la catégorie <tt>Manettes</tt>.</p>
+
+                            <p>La classe grise contient les catégories : <tt>Tapis de souris</tt>, <tt>Souris gaming</tt>, <tt>Toners</tt>, <tt>Coques rigides</tt> et <tt>Action - Aventure</tt>. Ainsi, il s'avère que des clients achètent ensemble des toners pour imprimantes et des jeux ainsi que leur équipements associés.</p>
+
+                            <p>La classe jaune contient les catégories : <tt>Supports</tt>, <tt>Protections d'écran</tt>, <tt>Câbles d'alimentation</tt>, <tt>Câbles USB</tt>, <tt>Chargeurs secteur</tt>, <tt>Smartphones et téléphones portables débloqués</tt>, <tt>Tablettes tactiles</tt>, <tt>Câbles HDMI</tt>, <tt>Batteries</tt> et <tt>Connectique</tt>. Ainsi, il semble que des clients achètent ensemble, les tablettes ou smartphones, et leurs équipements associés.</p>
+
+
+                            <p>La classe verte contient les catégories : <tt>Housses pour appareils photo</tt>, <tt>Batteries pour appareils photo</tt>, <tt>Adaptateurs et boîtiers</tt>, <tt>Cartes SD</tt> et <tt>Cartes micro SD - Transflash</tt>. Ainsi, il s'avère que des clients achètent ensemble les équipements pour appareils photo.</p>
+
+
+                            <p>La classe orange contient les catégories : <tt>Batteries externes</tt>, <tt>Casques et écouteurs</tt>, <tt>Kits d'accessoires</tt>, <tt>Films et protections d'écran</tt>, <tt>Housses et étuis téléphones portables</tt> et <tt>Chargeurs Allume-cigare</tt>. Ainsi, on note que des clients achètent ensemble des équipements pour téléphones mobiles.</p>
+
+                            <p>L'analyse de l'épaisseur des arcs représentant le poids de ces derniers est un bon indicateur des catégories des produits les plus souvent achetés ensemble. </p>
+
+                            <p>Ainsi, on obtient les résultats suivants : </p>
+
+                            <ul>
+                              <li> les produits de la catégorie <tt>Housses et étuis téléphones portables</tt> sont très souvent achetés avec ceux de la catégorie <tt>Films et protections d'écran</tt>; </li>
+                              <li> les produits de la catégorie <tt>Housses et étuis téléphones portables</tt> sont très souvent achetés avec ceux de la catégorie <tt>Smartphones et téléphones portables débloqués</tt>; </li>
+                              <li> les produits de la catégorie <tt>Protections d'écran</tt> sont très souvent achetés avec ceux de la catégorie <tt>Etuis</tt>; </li>
+                              <li> les produits de la catégorie <tt>Etuis</tt> sont très souvent achetés avec ceux de la catégorie <tt>Tablettes tactiles</tt>. </li>
+                            </ul>
+
+                            <p>Comme nous pouvons le constater, il y a un sens associé à ces liens. Effectivement, <em>Amazon</em> incite un client à acheter un étui à l'issu d'un achat de tablette tactile et non l'inverse.</p>
+
+                            <p>Enfin, la taille des noeuds étant associé à leur degré, on peut donc aussi se rendre compte que les catégories des produits les plus souvent achetés avec d'autres dans le domaine informatique et numérique sont : <tt>Câbles USB</tt> et <tt>Housses et étuis téléphones portables</tt>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer le graphe 3</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="modal-body">
+                            <h2>Graphe 4</h2>
+                            <p class="item-intro text-muted">Généré après classification avec application d'un deuxième filtre a posteriori</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="./amazon_sigma_filtre_2/network/index.html"></iframe>
+                            </div>
+                            <p>Les principales étapes suivies pour la génération du graphe 4 sont :</p>
+
+                            <ol>
+                                <li> utilisation de l'algorithme de spatialisation aléatoire des noeuds ; </li>
+                                <li> utilisation de l'algorithme <tt>Force Atlas 2</tt> ; </li>
+                                <li> clustering en se basant sur le critère de modularité ; </li>
+                                <li> calcul du degré associé à chaque noeud ; </li>
+                                <li> calcul du degré pondéré associé à chaque noeud ; </li>
+                                <li> application d'un filtre sur les noeuds de degrés inférieurs ou égaux à 30 ; </li>
+                                <li> application de couleurs aux noeuds en se basant sur leur classe d'appartenance (on rappelle que les 10 classes ont été obtenues en se basant sur le critère de modularité) ; </li>
+                                <li> application d'une taille de noeud en se basant sur le degré de ce dernier ; </li>
+                                <li> application d'une taille du label de noeud en se basant sur le degré de ce dernier ; </li>
+                                <li> utilisation de l'algorithme d'ajustement des labels ; </li>
+                                <li> utilisation de l'algorithme de déchevauchement ; </li>
+                                <li> export du graphe obtenu. </li>
+                            </ol>
+
+                            <p>Le clustering permet de mettre en exergue les produits souvent achetés ensemble. L'application d'un filtre sur le degré des noeuds vise à ne conserver que les noeuds centraux, les catégories des produits <strong>souvent</strong> achetés avec d'autres produits de catégories différentes.</p>
+
+                            <p>Ainsi, le graphe 4 nous permet d'identifier des classes et donc d'émettre des interprétations associées à ces dernières. </p>
+
+                            <p>La classe bleu turquoise contient les catégories : <tt>Claviers</tt>, <tt>Micro casques PC</tt>, <tt>Souris gaming</tt>, <tt>Tapis de souris</tt>, <tt>Ensembles Clavier et Souris</tt> et <tt>Souris</tt>. Ainsi, il semble que des clients achètent ensemble des accessoires pour ordinateurs.</p>
+
+                            <p>La classe rose foncé contient les catégories suivantes : <tt>Photo et Caméscopes</tt>, <tt>Films de protection d'écran</tt>, <tt>Objectifs pour reflex</tt>, <tt>Cartes micro SD - Transflash</tt>, <tt>Lecteurs de carte mémoire externes</tt>, <tt>Lunettes 3D</tt>, <tt>Adaptateurs et convertisseurs</tt>, <tt>Cartes SD</tt>, <tt>Télécommandes</tt>, <tt>Compacts et bridges</tt>, <tt>Batteries pour appareils photo</tt>, <tt>Caméras de surveillance</tt>, <tt>Caméscopes</tt>, <tt>Chargeurs de batteries</tt>, <tt>Housses pour appareils photo</tt>, <tt>Clés USB</tt>, <tt>Consommables et Accessoires</tt>, <tt>Batteries pour caméscopes</tt> et <tt>Trépieds</tt>. Ainsi, il s'avère que des clients achètent souvent ensemble des caméras ou appareils photo ainsi que leurs accessoires associés.</p>
+
+                            <p>La classe orange contient les catégories : <tt>Connectique</tt>, <tt>Chargeurs Allume-cigare</tt>, <tt>Chargeurs de bureau</tt>, <tt>Chargeurs secteur</tt>, <tt>Câbles USB</tt>, <tt>Adaptateurs USB</tt>, <tt>Chargeurs et adaptateurs</tt>, <tt>Chargeurs allumes cigares</tt>, <tt>Supports voiture</tt>, <tt>Batteries externes</tt>, <tt>Supports</tt>, <tt>Ensemble de chargeurs</tt> et <tt>Chargeurs</tt>. Ainsi, on constate que des clients achètent ensemble des produits permettant de charger des appareils dans différents endroits tels que leur(s) domicile(s) ou leur(s) véhicule(s). A titre d'exemple, cela peut s'expliquer par le fait qu'une personne peut avoir tendance à acheter un chargeur allume cigare et un chargeur secteur pour un même produit.</p>
+
+                            <p>La classe verte légèrement clair contient les catégories suivantes : <tt>Outils et testeurs</tt>, <tt>Câbles enceintes</tt>, <tt>Equipement d'installation électronique</tt>, <tt>Changeurs de genre</tt>, <tt>Accessoires Image et Son</tt>, <tt>Support mural</tt>, <tt>Plateformes et supports</tt>, <tt>Câbles HDMI</tt>, <tt>Ecrans PC</tt>, <tt>Câbles d'alimentation</tt>, <tt>Adaptateurs DVI-HDMI</tt>, <tt>Switches et hubs</tt>, <tt>Adaptateurs</tt>, <tt>Câbles</tt>, <tt>Câbles coaxiaux</tt>, <tt>Câbles stéréo jack</tt>, <tt>Câbles VGA</tt>, <tt>Hubs USB</tt>, <tt>Câbles Ethernet</tt>, <tt>Points d'accès</tt>, <tt>Câbles optique</tt>, <tt>Câbles d'antennes</tt>, <tt>Câbles RCA</tt>, <tt>Extentions d'alimentation</tt>, <tt>Adaptateurs USB wifi</tt> et <tt>Routeurs</tt>. Ainsi, il semble que des clients achètent ensemble des accessoires associés au son, à la vidéo au réseau filiaire et sans fil pour ordinateurs.</p>
+
+                            <p>La classe verte très clair contient les catégories suivantes : <tt>Câbles, Batteries et Adaptateurs</tt>, <tt>Consoles</tt>, <tt>Consoles et Accessoires</tt>, <tt>Action - Aventure</tt>, <tt>Jeux</tt>, <tt>Accessoires</tt> et <tt>Manettes</tt>. Ainsi, il s'avère que des clients achètent ensemble des consoles, les jeux et les accessoires associés.</p>
+
+                            <p>La classe bleu très clair contient notamment les catégories suivantes : <tt>Batteries d'ordinateur portable</tt>, <tt>SSD internes</tt>, <tt>Alimentation</tt>, <tt>Produits et accessoires de nettoyage</tt>, <tt>Cartes mères</tt>, <tt>Mémoire RAM</tt>, <tt>Boîtiers PC</tt>, <tt>Disques durs internes</tt>, <tt>Alimentation pour ordinateur portable</tt>, <tt>Cartes contrôleurs</tt>, <tt>Disques durs externes</tt>, <tt>Rubans adhésifs</tt>, <tt>Adaptateurs et boîtiers</tt>, <tt>Accessoires Caméscopes</tt>, <tt>Cartouches d'encre</tt>, <tt>Composants PC</tt>, <tt>Cartes réseaux PCI</tt> et <tt>Câbles SATA</tt>. Ainsi, on constate que des clients achètent des composants hardware ensemble. Étonnement, il arrive que certains clients achètent des rubans adhésifs et des cartouches d'encre avec ces derniers.</p>
+
+                            <p>La classe bleu légèrement clair contient les catégories : <tt>Ampoules LED</tt>, <tt>Casques et écouteurs</tt>, <tt>Kits piéton filaires</tt>, <tt>Oreillettes bluetooth</tt>, <tt>Enceintes portables</tt> et <tt>Shampooings</tt>. Ainsi, il semble que des clients achètent ensemble des accessoires liés au son pour téléphones mobiles. Par ailleurs, il arrive que certains clients achètent des ampoules LED et des shampoings avec ces derniers.</p>
+
+                            <p>La classe rose clair contient les catégories : <tt>Housses et étuis téléphones portables</tt>, <tt>Smartphones et téléphones portables débloqués</tt>, <tt>Films et protections d'écran</tt> et <tt>Kits d'accessoires</tt>. Ainsi, il s'avère que des clients achètent ensemble des téléphones portables et certains accessoires associés.</p>
+
+                            <p>La classe bleu foncé contient les catégories : <tt>Ordinateurs portables</tt>, <tt>Besaces</tt>, <tt>Accessoires pour ordinateur portable</tt>, <tt>Etuis</tt>, <tt>Housses</tt>, <tt>Tablettes tactiles</tt>, <tt>Protections d'écran</tt>, <tt>Kits accessoires</tt> et <tt>Serviettes</tt>. Ainsi, on remarque que certains clients achètent ensemble des ordinateurs portables et des tablettes tactiles ainsi que leurs accessoires associés.</p>
+
+                            <p>La classe marron contient les catégories : <tt>Batteries</tt>, <tt>Pièces de remplacement</tt> et <tt>Piles jetables</tt>. Ainsi, il semble que des client achètent ensemble des batteries et des piles jetables.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer le graphe 4</button>
                         </div> 
                     </div>
                 </div>

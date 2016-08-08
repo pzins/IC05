@@ -1,8 +1,22 @@
-# IC05-foot-L1
-match L1 last 4 seasons
+# Projet IC05
+
+## amazon
+
+### Description:
+This projet consists of two part:
+* First, the data has to be scraped from an online store in order to build links between items.
+* Secondly, the data has to be reprensented as a graph.
+
+### Members:
+* Daniel Artchounin
+* Camil Sadiki
+* Pierre Zins
 
 
-## l1_foot : Present graph view of L1 match
+## l1_foot
+
+### L1 matches of the last 4 seasons
+
 - 2012/2013
 - 2013/2014
 - 2041/2015
@@ -14,19 +28,21 @@ An oriented edge from team A to team B
 - if the result attribute is < 0 : B have more victory against A
 - if the result attribute is = 0 : A and B have equal victories/defeats/draws
 
-<b>Example</b> : Lyon ------> Nice
-an edge result attribute = 2
 
-- it means that LYON have a score of 2 :
-- so for matchs : Lyon - Nice or Nice - Lyon
-- it could be 2 victories for Lyon and 0 defeat and 2 draws
-- or 3 victories for Lyon and 1 defeat and 0 draw
-- or ...
-- <b>the global result is +2 for Lyon</b>
+### files : 
+- gps.data : GPS coordinate of French L1 cities
+- foot.py : scrap data about L1 results
+- format.py : create GEFX file with GPS coordinate from data scraped
+- data_l1.xml : data scraped about L1 results
+- gephi_data_l1.gexf : formatted data
+- l1_moyenne.gephi : result L1 mean (victory, defeat, draw)
+
 
 
 ## wikipedia
 - Scraping data from Wikipedia
-- Follow every link in the wikipedia page
-- Start with one or several page at the beginning
+- Visit every links in the wikipedia page
+- Start with one or several key pages
 - Give a graph view with links between related words
+
+

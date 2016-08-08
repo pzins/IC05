@@ -43,7 +43,7 @@ teams = []
 fixtures = []
 
 
-tree = etree.parse("2015.xml")
+tree = etree.parse("data_l1.xml")
 for user in tree.xpath("/matches/match/home"):
     if user.text not in teams:
     	teams.append(user.text)
